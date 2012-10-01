@@ -7,15 +7,16 @@
 //
 //
 //
-module FIR_top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3);
+module FIR_top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3, LEDG);
 
 	//I/O Definition
 	input toggleBtn;
 	input CLOCK_50;
 	output [6:0] HEX0,HEX1,HEX2,HEX3;
+	output [7:0] LEDG;
 	
 	//Internal Storage Registers
-	reg signed [7:0] X1,X2,X3,Z;
+	reg signed [7:0] X1;
 	reg enable;
 	reg [34:0] i;
 	
@@ -23,8 +24,6 @@ module FIR_top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3);
 	initial
 	begin
 		X1 <= 8'b00000000;
-		X2 <= 8'b00000000;
-		X3 <= 8'b00000000;
 		i <= 1'd0;
 		enable = 1'b0;
 	end
@@ -33,8 +32,6 @@ module FIR_top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3);
 	always @(posedge enable)
 	begin
 		X1 <= 8'b00000000;
-		X2 <= 8'b00000000;
-		X3 <= 8'b00000000;
 		i <= 0;
 	end
 	
@@ -48,14 +45,12 @@ module FIR_top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3);
 	always @(posedge CLOCK_50)
 	begin
 		if(enable)
-			X3 = X2;
-			X2 = X1;
 			i = i + 1; //count calculations
 	end
 	
 	//Submodule calls
 	//random_number(enable,CLk,X1);
 	
-	//moving_average(enable,Clk,X1,X2,X3,Z);
+	moving_average(enable,Clk,X1,LEDG);
 	
 endmodule
