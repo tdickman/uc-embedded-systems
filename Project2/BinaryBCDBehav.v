@@ -1,21 +1,20 @@
-module binary_to_BCD_behav();
-
-	input Clk, enable;
-	input [34:0] data;
-	output [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8;
+module binary_to_BCD_behav(
+	input Clk, enable,
+	input [34:0] data,
+	output [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8
+	);
 	
 	wire [9:0]bit_out;
-	parameter j;
+	reg j, convert;
 	
 	always@(Clk)
 	begin
 		if(~enable)
 		begin
-			if(j<'d34)
+			if(j<'d34) begin
 				j = j+1;
 				convert = 1;
-			else
-			begin
+			end else	begin
 				convert = 0;
 				j = 0;
 			end

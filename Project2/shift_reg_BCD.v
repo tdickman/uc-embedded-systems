@@ -13,7 +13,7 @@ module shift_reg_BCD(bit_in,enable,Clk,out_bit);
 			q[0]<=bit_in;
 			if(q>5)
 			begin
-				q+3;
+				q<=q+3;
 			end
 		end
 		else

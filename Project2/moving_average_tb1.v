@@ -19,7 +19,7 @@ module moving_average_tb();
 	parameter cycleTime = 10;//number of cycles
 
 	moving_average moving_average(
-	.enable(enable), .Clk(Clk), 
+	.enable_n(Enable), .Clk(Clk), 
 	 .X1(X1), .Z(Z)
 	);
 			
@@ -28,8 +28,9 @@ module moving_average_tb();
 		Enable = 0;
 				
 		for (i=0; i<cycleTime; i=i+1) begin 
-			X1 = X1 + 1;
+			X1 = 2;
 			Clk = ~Clk;
+			#5;
 		end
 	
 	end	
