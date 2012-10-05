@@ -53,4 +53,6 @@ module FIR_top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3, LEDG);
 	
 	moving_average(enable,Clk,X1,LEDG);
 	
+	
+	
 endmodule
