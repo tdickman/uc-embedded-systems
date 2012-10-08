@@ -25,9 +25,18 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	
 	//7-Segment Output
 	reg [11:0] cur7Seg;
-	BCD_2_7Seg	bto71(.bcd(cur7Seg[11:8]), .a_to_g(HEX2));
-	BCD_2_7Seg	bto72(.bcd(cur7Seg[7:4]),  .a_to_g(HEX1));
-	BCD_2_7Seg	bto73(.bcd(cur7Seg[3:0]),  .a_to_g(HEX0));
+	BCD_2_7Seg	bto71(
+		.bcd(cur7Seg[11:8]),
+		.a_to_g(HEX2)
+	);
+	BCD_2_7Seg	bto72(
+		.bcd(cur7Seg[7:4]),
+		.a_to_g(HEX1)
+	);
+	BCD_2_7Seg	bto73(
+		.bcd(cur7Seg[3:0]),
+		.a_to_g(HEX0)
+	);
 	
 	//Slow Clock
 	slowClock slowClock(slowClk, CLOCK_50);
