@@ -15,15 +15,22 @@ module top_level_tb();
 	
 	wire LEDG;
 	
+	wire reset_n
+	
 	integer i;            // loop variable 
 	parameter cycleTime = 10;//number of cycles
 
-	top_level top_level(.toggleBtn(toggleBtn),.CLOCK_50(Clk),
-				.HEX0(HEX0),.HEX1(HEX1),.HEX2(HEX2), .LEDG(LEDG));
+	FIR_top_level FIR_top_level(.toggleBtn(toggleBtn),.CLOCK_50(Clk),
+				.HEX0(HEX0),.HEX1(HEX1),.HEX2(HEX2),.HEX3(HEX3), .LEDG(LEDG), .reset_n(reset_n));
 			
 	initial begin
 		
 		toggleBtn = 0;
+		reset_n = 1;
+		#1 Clk = ~Clk;
+		reset_n = 0;
+		#1 Clk = ~Clk;
+		reset_n = 1;
 		
 				
 		for (i=0; i<2; i=i+1) begin 
