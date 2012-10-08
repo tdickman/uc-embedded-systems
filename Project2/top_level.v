@@ -20,8 +20,8 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 	//Internal Storage Registers
 	reg [35:0] data;
 	wire signed [7:0] X1;
-	reg enable;
-	reg [2:0] show7seg;
+	reg enable = 1'b0;
+	reg [2:0] show7seg = 3'b000;
 	wire [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8,BCD9,BCD10;
 	wire slowClk;
 	parameter A = 3'b000, B = 3'b001, C = 3'b010, D = 3'b011;
