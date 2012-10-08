@@ -32,9 +32,9 @@ module top_level_tb();
 		reset_n = 0;
 		#10;
 		reset_n = 1;		
-		#1000;
+		#100000;
 		toggleBtn = 0;
-		#1000;
+		#100000;
 	
 		$display($time);
 		$monitor($time);
