@@ -22,7 +22,7 @@
 
 module lfsr_test ();
 
-parameter WIDTH = 20;
+parameter WIDTH = 8;
 
 reg clk, rst, fail;
 integer cycles;

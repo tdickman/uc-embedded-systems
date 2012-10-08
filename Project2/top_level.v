@@ -25,9 +25,9 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	
 	//7-Segment Output
 	reg [11:0] cur7Seg;
-	BCD_2_7Seg	O1(.bcd(cur7Seg[11:8]), .a_to_g(HEX2));
-	BCD_2_7Seg	O2(.bcd(cur7Seg[7:4]),  .a_to_g(HEX1));
-	BCD_2_7Seg	O3(.bcd(cur7Seg[3:0]),  .a_to_g(HEX0));
+	BCD_2_7Seg	bto71(.bcd(cur7Seg[11:8]), .a_to_g(HEX2));
+	BCD_2_7Seg	bto72(.bcd(cur7Seg[7:4]),  .a_to_g(HEX1));
+	BCD_2_7Seg	bto73(.bcd(cur7Seg[3:0]),  .a_to_g(HEX0));
 	
 	//Slow Clock
 	slowClock slowClock(slowClk, CLOCK_50);
@@ -97,11 +97,15 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	end
 	
 	//Submodule calls
-	lfsr U1(enable,CLk,X1);
+	lfsr lfsr1(
+		.clk(CLk),
+		.rst(~enable),
+		.out(X1)
+	);
 	
-	moving_average U2(enable,Clk,X1,LEDG);
+	moving_average ma1(enable,Clk,X1,LEDG);
 	
-	BinaryBCDBehav U3(CLOCK_50,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
+	BinaryBCDBehav b2bcd1(CLOCK_50,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
 	
 	
 	

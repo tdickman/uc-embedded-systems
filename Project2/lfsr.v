@@ -22,7 +22,7 @@
 
 module lfsr (clk,rst,out);
 
-parameter WIDTH = 32;
+parameter WIDTH = 8;
 input clk,rst;
 output [WIDTH-1:0] out;
 
