@@ -18,7 +18,6 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	//Internal Storage Registers
 	wire signed [7:0] X1;
 	reg enable;
-	reg [35:0] i;
 	reg [1:0] show7seg;
 	wire [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8;
 	wire slowClk;
