@@ -11,15 +11,15 @@ module top_level_tb();
 
 	reg Clk, Enable, toggleBtn;
 	
-	wire [6:0] HEX0,HEX1,HEX2,HEX3;
+	wire [6:0] HEX0,HEX1,HEX2;
 	
 	wire LEDG;
 	
 	integer i;            // loop variable 
 	parameter cycleTime = 10;//number of cycles
 
-	FIR_top_level FIR_top_level(.toggleBtn(toggleBtn),.CLOCK_50(Clk),
-				.HEX0(HEX0),.HEX1(HEX1),.HEX2(HEX2),.HEX3(HEX3), .LEDG(LEDG));
+	top_level top_level(.toggleBtn(toggleBtn),.CLOCK_50(Clk),
+				.HEX0(HEX0),.HEX1(HEX1),.HEX2(HEX2), .LEDG(LEDG));
 			
 	initial begin
 		

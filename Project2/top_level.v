@@ -57,31 +57,31 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 				cur7Seg[11:8] <= 4'b1111;
 				cur7Seg[7:4] <= 4'b1111;
 				cur7Seg[3:0] <= 4'b1111;
-				show7seg = 2'b01;
+				show7seg <= B;
 			  end
 			B:begin
 				cur7Seg[11:8] <= BCD8;
 				cur7Seg[7:4] <= BCD7;
 				cur7Seg[3:0] <= BCD6;
-				show7seg = 2'b10;
+				show7seg <= C;
 			  end
 			C:begin
 				cur7Seg[11:8] <= BCD5;
 				cur7Seg[7:4] <= BCD4;
 				cur7Seg[3:0] <= BCD3;
-				show7seg = 2'b11;
+				show7seg <= D;
 			  end
 			D:begin
 				cur7Seg[11:8] <= BCD2;
 				cur7Seg[7:4] <= BCD1;
 				cur7Seg[3:0] <= BCD0;
-				show7seg = 2'b00;
+				show7seg <= A;
 			  end
 			default: begin
 						cur7Seg[11:8] <= 4'b1111;
 						cur7Seg[7:4] <= 4'b1111;
 						cur7Seg[3:0] <= 4'b1111;
-						show7seg = 2'b01;
+						show7seg <= D;
 					 end
 		endcase
 	end
