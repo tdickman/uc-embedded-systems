@@ -21,6 +21,7 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	reg [35:0] i;
 	reg [1:0] show7seg;
 	wire [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8;
+	wire slowClk;
 	parameter A = 2'b00, B = 2'b01, C = 2'b10, D = 2'b11;
 	
 	//7-Segment Output
@@ -98,12 +99,12 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	
 	//Submodule calls
 	lfsr lfsr1(
-		.clk(CLk),
+		.clk(slowClk),
 		.rst(~enable),
 		.out(X1)
 	);
 	
-	moving_average ma1(enable,Clk,X1,LEDG);
+	moving_average ma1(enable,slowClk,X1,LEDG);
 	
 	BinaryBCDBehav b2bcd1(CLOCK_50,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
 	
