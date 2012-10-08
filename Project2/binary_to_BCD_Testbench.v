@@ -1,4 +1,4 @@
-module binary_to_BCD_Testbench;
+module binary_to_BCD_Testbench();
 
 	reg Clk, enable;
 	reg [35:0] data;
@@ -20,26 +20,28 @@ module binary_to_BCD_Testbench;
 	);
 	
 	initial forever
+	begin
 		Clk = 1;
 		#5;
 		Clk = 0;
+	end
 	
 	initial
 	begin
 		enable = 0;
-		binary = 'd650345768;
+		data = 'd650345768;
 		#100;
-		binary = 'd1500478987;
+		data = 'd1500478987;
 		#100;
-		binary = 'd1234593;
+		data = 'd1234593;
 		#100;
-		binary = 'd566789321;
+		data = 'd566789321;
 		#100;
-		binary = 'd56292734539;
+		data = 'd56292734539;
 		#100;
-		binary = 'd2938710236;
+		data = 'd2938710236;
 		#100;
-		binary = 'd082298316283;
+		data = 'd082298316283;
 		#100;
 	end
 endmodule 

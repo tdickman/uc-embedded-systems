@@ -114,7 +114,7 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG,reset_n);
 		.Z(LEDG)
 	);
 	
-	BinaryBCDBehav b2bcd1(
+	binary_to_BCD_Behav b2bcd1(
 		.Clk(CLOCK_50),
 		.enable(enable),
 		.data(data),
