@@ -97,11 +97,11 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	end
 	
 	//Submodule calls
-	random_number U1(enable,CLk,X1);
+	lfsr U1(enable,CLk,X1);
 	
 	moving_average U2(enable,Clk,X1,LEDG);
 	
-	binary_to_BCD_Behav U3(CLOCK_50,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
+	BinaryBCDBehav U3(CLOCK_50,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
 	
 	
 	

@@ -1,5 +1,5 @@
 
-module binary_to_BCD_behav(Clk,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
+module BinaryBCDBehav(Clk,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
 
 	input Clk, enable;
 	input [35:0] data;
