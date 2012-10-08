@@ -56,7 +56,7 @@ module shift_reg_BCD(bit_in,enable,Clk,q);
 		end
 		else
 		begin
-			q <=43'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
+			q <=43'b0;
 		end
 	end
 endmodule
