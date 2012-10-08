@@ -103,13 +103,13 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG,reset_n);
 	//Submodule calls
 	lfsr lfsr1(
 		.clk(CLOCK_50),
-		.rst(reset_n),
+		.rst(~reset_n),
 		.out(X1)
 	);
 	
 	moving_average ma1(
 		.enable_n(enable),
-		.Clk(slowClk),
+		.Clk(CLOCK_50),
 		.X1(X1),
 		.Z(LEDG)
 	);
