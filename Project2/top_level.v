@@ -39,7 +39,10 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	);
 	
 	//Slow Clock
-	slowClock slowClock(slowClk, CLOCK_50);
+	slowClock slowClock(
+		.Sclk(slowClk),
+		.clk(CLOCK_50)
+	);
 	
 	//Button toggle for 'start' and 'stop'
 	always @(negedge toggleBtn)
@@ -90,9 +93,27 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 		.out(X1)
 	);
 	
-	moving_average ma1(enable,slowClk,X1,LEDG);
+	moving_average ma1(
+		.enable_n(enable),
+		.Clk(slowClk),
+		.X1(X1),
+		.Z(LEDG)
+	);
 	
-	BinaryBCDBehav b2bcd1(CLOCK_50,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
+	BinaryBCDBehav b2bcd1(
+		.Clk(CLOCK_50),
+		.enable(enable),
+		.data(data),
+		.BCD0(BCD0),
+		.BCD1(BCD1),
+		.BCD2(BCD2),
+		.BCD3(BCD3),
+		.BCD4(BCD4),
+		.BCD5(BCD5),
+		.BCD6(BCD6),
+		.BCD7(BCD7),
+		.BCD8(BCD8)
+	);
 	
 	
 	
