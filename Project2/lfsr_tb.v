@@ -20,7 +20,7 @@
 // other product not provided by Altera.
 /////////////////////////////////////////////////////////////////////////////
 
-module lfsr_test ();
+module lfsr_tb ();
 
 parameter WIDTH = 8;
 
