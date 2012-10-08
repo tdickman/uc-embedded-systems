@@ -21,10 +21,10 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 	reg [35:0] data;
 	wire signed [7:0] X1;
 	reg enable;
-	reg [1:0] show7seg;
+	reg [2:0] show7seg;
 	wire [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8,BCD9,BCD10;
 	wire slowClk;
-	parameter A = 2'b00, B = 2'b01, C = 2'b10, D = 2'b11;
+	parameter A = 3'b000, B = 3'b001, C = 3'b010, D = 3'b011;
 	
 	//7-Segment Output
 	reg [11:0] cur7Seg;
@@ -68,8 +68,7 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 	always@(posedge slowClk)
 	begin
 		if(enable)
-			show7seg <= default;
-		end
+			show7seg <= 2'b100;
 		
 		case(show7seg)
 			A:begin
@@ -98,6 +97,13 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 				cur7Seg[7:4] <= BCD1;
 				cur7Seg[3:0] <= BCD0;
 				HEX3[6:0] <= 7'b1000000;
+				show7seg <= A;
+			  end
+			3'b100:begin
+				cur7Seg[11:8] <= 4'b1111;
+				cur7Seg[7:4] <= 4'b1111;
+				cur7Seg[3:0] <= 4'b1111;
+				HEX3[6:0] <= 7'b0111111;
 				show7seg <= A;
 			  end
 			default: begin
