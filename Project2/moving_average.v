@@ -15,7 +15,7 @@ module moving_average(
 			X3 = X2;
 			X2 = temp;
 			temp = A*X1;
-			Z_temp = temp + X2 + X3;
+			Z_temp = temp + X2 + X3 + 3;
 			//Z = 6'b010101*X1 + 6'b010101*X2 + 6'b010101*X3;
 		end
 	end

@@ -33,21 +33,6 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	//Slow Clock
 	slowClock slowClock(slowClk, CLOCK_50);
 	
-	//Establish Initial Register Conditions
-	initial
-	begin
-		X1 <= 8'b00000000;
-		i <= 1'd0;
-		enable = 1'b0;
-	end
-	
-	//Intialize Registers at 'start'
-	always @(posedge enable)
-	begin
-		X1 <= 8'b00000000;
-		i <= 0;
-	end
-	
 	//Button toggle for 'start' and 'stop'
 	always @(negedge toggleBtn)
 	begin

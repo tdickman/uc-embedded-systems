@@ -16,7 +16,7 @@ module moving_average_tb();
 	wire [7:0] Z;
 	
 	integer i;            // loop variable 
-	parameter cycleTime = 10;//number of cycles
+	parameter cycleTime = 256;//number of cycles
 
 	moving_average moving_average(
 	.enable_n(Enable), .Clk(Clk), 
@@ -28,7 +28,9 @@ module moving_average_tb();
 		Enable = 0;
 				
 		for (i=0; i<cycleTime; i=i+1) begin 
-			X1 = 2;
+			X1 = i;
+			Clk = ~Clk;
+			#5;
 			Clk = ~Clk;
 			#5;
 		end
