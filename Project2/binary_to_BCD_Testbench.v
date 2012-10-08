@@ -2,7 +2,7 @@ module binary_to_BCD_Testbench();
 
 	reg Clk, enable;
 	reg [35:0] data;
-	wire [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8;
+	wire [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8,BCD9,BCD10;
 	
 	binary_to_BCD_Behav simulate(
 		.Clk(Clk),
@@ -20,7 +20,7 @@ module binary_to_BCD_Testbench();
 	);
 	
 	always begin
-		#50 Clk = ~Clk;	
+		#100 Clk = ~Clk;	
 	end
 	
 	initial

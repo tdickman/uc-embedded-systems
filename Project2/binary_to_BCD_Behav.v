@@ -1,19 +1,20 @@
 
-module binary_to_BCD_Behav(Clk,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8);
+module binary_to_BCD_Behav(Clk,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8,BCD9,BCD10);
 
 	input Clk, enable;
 	input [35:0] data;
-	output [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8;
+	output [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8,BCD9,BCD10;
 	
-	wire [9:0]bit_out;
+	wire bit_out;
 	integer j; 
 	reg convert;
+	wire [43:0] BCD;
 	
 	always@(posedge Clk)
 	begin
 		if(~enable)
 		begin
-			if(j<'d35)
+			if(j<'d40)
 			begin
 				j = j+1;
 				convert = 1;
@@ -26,16 +27,20 @@ module binary_to_BCD_Behav(Clk,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BC
 		end
 	end
 	
-	shift_reg_load R1(data,convert,Clk,bit_out[0]);
-	shift_reg_BCD R2(bit_out[0],convert,Clk,bit_out[1],BCD0);
-	shift_reg_BCD R3(bit_out[1],convert,Clk,bit_out[2],BCD1);
-	shift_reg_BCD R4(bit_out[2],convert,Clk,bit_out[3],BCD2);
-	shift_reg_BCD R5(bit_out[3],convert,Clk,bit_out[4],BCD3);
-	shift_reg_BCD R6(bit_out[4],convert,Clk,bit_out[5],BCD4);
-	shift_reg_BCD R7(bit_out[5],convert,Clk,bit_out[6],BCD5);
-	shift_reg_BCD R8(bit_out[6],convert,Clk,bit_out[7],BCD6);
-	shift_reg_BCD R9(bit_out[7],convert,Clk,bit_out[8],BCD7);
-	shift_reg_BCD R10(bit_out[8],convert,Clk,bit_out[9],BCD8);
+	assign BCD0 = BCD[3:0];
+	assign BCD1 = BCD[7:4];
+	assign BCD2 = BCD[11:8];
+	assign BCD3 = BCD[15:12];
+	assign BCD4 = BCD[19:16];
+	assign BCD5 = BCD[23:20];
+	assign BCD6 = BCD[27:24];
+	assign BCD7 = BCD[31:28];
+	assign BCD8 = BCD[35:32];
+	assign BCD9 = BCD[39:36];
+	assign BCD10 = BCD[43:40];
+	
+	shift_reg_load R1(data,convert,Clk,bit_out);
+	shift_reg_BCD R2(bit_out,convert,Clk,BCD);
 	
 endmodule
 	
