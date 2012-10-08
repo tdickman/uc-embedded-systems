@@ -67,6 +67,10 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 	
 	always@(posedge slowClk)
 	begin
+		if(enable)
+			show7seg <= default;
+		end
+		
 		case(show7seg)
 			A:begin
 				cur7Seg[11:8] <= 4'b1111;
@@ -101,7 +105,7 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 						cur7Seg[7:4] <= 4'b1111;
 						cur7Seg[3:0] <= 4'b1111;
 						HEX3[6:0] <= 7'b0111111;
-						show7seg <= D;
+						show7seg <= A;
 					 end
 		endcase
 	end
