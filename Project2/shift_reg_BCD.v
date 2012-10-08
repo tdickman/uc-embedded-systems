@@ -1,7 +1,7 @@
-module shift_reg_BCD(bit_in,enable,Clk,out_bit);
+module shift_reg_BCD(bit_in,enable,Clk,out_bit,q);
 	/*Define I/O */
 	input bit_in,enable, Clk;
-	reg [3:0]q;
+	output reg [3:0]q;
 	output reg out_bit;
 	
 	always@(posedge Clk)
