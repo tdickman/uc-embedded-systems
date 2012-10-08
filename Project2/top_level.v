@@ -102,7 +102,7 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG,reset_n);
 	
 	//Submodule calls
 	lfsr lfsr1(
-		.clk(slowClk),
+		.clk(CLOCK_50),
 		.rst(reset_n),
 		.out(X1)
 	);
