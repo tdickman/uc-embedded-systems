@@ -28,24 +28,22 @@ module top_level_tb();
 		Clk = 0;
 		toggleBtn = 1;
 		reset_n = 1;
-		#1 Clk = ~Clk;
+		#10;
 		reset_n = 0;
-		#1 Clk = ~Clk;
-		reset_n = 1;
-		
-				
-		for (i=0; i<2; i=i+1) begin 
-			#1 Clk = ~Clk;
-		end
-		
-		for (i=0; i<cycleTime; i=i+1) begin 
-			#1 Clk = ~Clk;
-		end
-		
+		#10;
+		reset_n = 1;		
+		#100;
 		toggleBtn = 0;
-		for (i=0; i<2; i=i+1) begin 
-			#1 Clk = ~Clk;
-		end
+		#100;
 	
-	end	
+		$display($time);
+		$monitor($time);
+	
+		$stop;
+	end
+
+	always begin
+		#10 Clk = ~Clk;	
+	end
+	
 endmodule
