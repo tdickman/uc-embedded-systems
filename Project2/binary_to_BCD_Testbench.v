@@ -20,25 +20,27 @@ module binary_to_BCD_Testbench();
 	);
 	
 	always begin
-		#10 Clk = ~Clk;	
+		#50 Clk = ~Clk;	
 	end
 	
 	initial
 	begin
+		Clk = 0;
 		enable = 0;
 		data = 'd650345768;
-		#100;
+		#10000;
 		data = 'd1500478987;
-		#100;
+		#10000;
 		data = 'd1234593;
-		#100;
+		#10000;
 		data = 'd566789321;
-		#100;
+		#10000;
 		data = 'd56292734539;
-		#100;
+		#10000;
 		data = 'd2938710236;
-		#100;
+		#10000;
 		data = 'd082298316283;
-		#100;
+		#10000;
+		$stop;
 	end
 endmodule 
