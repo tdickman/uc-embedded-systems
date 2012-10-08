@@ -19,11 +19,8 @@ module binary_to_BCD_Testbench();
 		.BCD8(BCD8)
 	);
 	
-	initial forever
-	begin
-		Clk = 1;
-		#5;
-		Clk = 0;
+	always begin
+		#10 Clk = ~Clk;	
 	end
 	
 	initial
