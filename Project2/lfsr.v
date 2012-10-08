@@ -75,9 +75,9 @@ assign feedback = {WIDTH{myreg[WIDTH-1]}} & poly;
 // the inverter on the LSB causes 000... to be a 
 // sequence member rather than the frozen state
 always @(posedge clk or posedge rst) begin
-  if (rst) myreg <= 0;
+  if (rst) myreg = 0;
   else begin
-     myreg <= ((myreg ^ feedback) << 1) | !myreg[WIDTH-1];
+     myreg = ((myreg ^ feedback) << 1) | !myreg[WIDTH-1];
   end
 end
 

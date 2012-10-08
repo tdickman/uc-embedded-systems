@@ -16,7 +16,7 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	output [7:0] LEDG;
 	
 	//Internal Storage Registers
-	reg signed [7:0] X1;
+	wire signed [7:0] X1;
 	reg enable;
 	reg [35:0] i;
 	reg [1:0] show7seg;
