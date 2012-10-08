@@ -18,11 +18,11 @@ module slowClock (Sclk, clk);
 	
 	reg Sclk;
 	
-	reg [21:0] count = 22'b0000000000000000000000;
+	reg [31:0] count = 32'b00000000000000000000000000000000;
 	
 	always @(posedge clk) begin 
-		if (count[21]==1) begin
-			count = 22'b0000000000000000000000;
+		if (count[25]==1) begin
+			count = 32'b00000000000000000000000000000000;
 			Sclk <= 1; 
 		end else begin
 			count= count + 1;

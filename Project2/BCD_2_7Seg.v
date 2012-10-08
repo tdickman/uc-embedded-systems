@@ -40,7 +40,7 @@ module BCD_2_7Seg(
 			4'd12:	a_to_g = 7'b1111111; //12 - added to eliminate latch warning
 			4'd13:	a_to_g = 7'b1111111; //13 - added to eliminate latch warning
 			4'd14:	a_to_g = 7'b1111111; //14 - added to eliminate latch warning
-			4'd15:	a_to_g = 7'b1111111; //15 - added to eliminate latch warning
+			4'd15:	a_to_g = 7'b0111111; //15 - added to eliminate latch warning
 		endcase
 
 endmodule
