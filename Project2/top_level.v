@@ -7,12 +7,13 @@
 //
 //
 //
-module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG,reset_n);
+module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 
 	//I/O Definition
 	input toggleBtn;
 	input CLOCK_50;
 	output [6:0] HEX0,HEX1,HEX2;
+	output reg [6:0] HEX3;
 	output [7:0] LEDG;
 	input reset_n;
 	
@@ -71,30 +72,35 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG,reset_n);
 				cur7Seg[11:8] <= 4'b1111;
 				cur7Seg[7:4] <= 4'b1111;
 				cur7Seg[3:0] <= 4'b1111;
+				HEX3[6:0] <= 7'b0111111;
 				show7seg <= B;
 			  end
 			B:begin
 				cur7Seg[11:8] <= BCD8;
 				cur7Seg[7:4] <= BCD7;
 				cur7Seg[3:0] <= BCD6;
+				HEX3[6:0] <= 7'b0001000;
 				show7seg <= C;
 			  end
 			C:begin
 				cur7Seg[11:8] <= BCD5;
 				cur7Seg[7:4] <= BCD4;
 				cur7Seg[3:0] <= BCD3;
+				HEX3[6:0] <= 7'b0000000;
 				show7seg <= D;
 			  end
 			D:begin
 				cur7Seg[11:8] <= BCD2;
 				cur7Seg[7:4] <= BCD1;
 				cur7Seg[3:0] <= BCD0;
+				HEX3[6:0] <= 7'b1000110;
 				show7seg <= A;
 			  end
 			default: begin
 						cur7Seg[11:8] <= 4'b1111;
 						cur7Seg[7:4] <= 4'b1111;
 						cur7Seg[3:0] <= 4'b1111;
+						HEX3[6:0] <= 7'b0111111;
 						show7seg <= D;
 					 end
 		endcase
