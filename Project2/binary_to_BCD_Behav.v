@@ -14,7 +14,7 @@ module binary_to_BCD_Behav(Clk,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BC
 	begin
 		if(~enable)
 		begin
-			if(j<'d40)
+			if(j<'d37)
 			begin
 				j = j+1;
 				convert = 1;
