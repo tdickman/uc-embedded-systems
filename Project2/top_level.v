@@ -39,13 +39,6 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 		enable = ~enable;
 	end
 	
-	//Register Shift for next calculation
-	always @(posedge CLOCK_50)
-	begin
-		if(enable)
-			i = i + 1; //count calculations
-	end
-	
 	always@(posedge slowClk)
 	begin
 		case(show7seg)
