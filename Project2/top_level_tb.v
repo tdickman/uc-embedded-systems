@@ -15,7 +15,7 @@ module top_level_tb();
 	
 	wire LEDG;
 	
-	wire reset_n;
+	reg reset_n;
 	
 	integer i;            // loop variable 
 	parameter cycleTime = 10;//number of cycles
