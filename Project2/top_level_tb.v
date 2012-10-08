@@ -15,7 +15,7 @@ module top_level_tb();
 	
 	wire LEDG;
 	
-	wire reset_n
+	wire reset_n;
 	
 	integer i;            // loop variable 
 	parameter cycleTime = 10;//number of cycles
@@ -25,7 +25,7 @@ module top_level_tb();
 			
 	initial begin
 		
-		toggleBtn = 0;
+		toggleBtn = 1;
 		reset_n = 1;
 		#1 Clk = ~Clk;
 		reset_n = 0;
