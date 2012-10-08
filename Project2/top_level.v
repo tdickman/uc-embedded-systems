@@ -7,15 +7,17 @@
 //
 //
 //
-module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
+module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG,reset_n);
 
 	//I/O Definition
 	input toggleBtn;
 	input CLOCK_50;
 	output [6:0] HEX0,HEX1,HEX2;
 	output [7:0] LEDG;
+	input reset_n;
 	
 	//Internal Storage Registers
+	reg [35:0] data;
 	wire signed [7:0] X1;
 	reg enable;
 	reg [1:0] show7seg;
@@ -45,9 +47,21 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG);
 	);
 	
 	//Button toggle for 'start' and 'stop'
-	always @(negedge toggleBtn)
+	always @(negedge toggleBtn or negedge reset_n)
 	begin
-		enable = ~enable;
+		if (~reset_n)
+			enable = 0;
+		else
+			enable = ~enable;
+	end
+	
+	always@(posedge CLOCK_50 or negedge reset_n)
+	begin
+		if (~reset_n)
+			data = 0;
+		else
+			if (enable)
+				data = data + 1;
 	end
 	
 	always@(posedge slowClk)
