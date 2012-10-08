@@ -4,8 +4,21 @@ module binary_to_BCD_Testbench;
 	reg [35:0] data;
 	wire [3:0] BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BCD7,BCD8;
 	
-	binary_to_BCD_Behav simulate(.Clk(Clk),.enable(enable),.data(data),.BCD0(BCD0),.BCD1(BCD1),.BCD2(BCD2),.BCD3(BCD3),.BCD4(BCD4)
-									,.BCD5(BCD5),.BCD6(BCD6),.BCD7(BCD7),.BCD8(BCD8));
+	binary_to_BCD_Behav simulate(
+		.Clk(Clk),
+		.enable(enable),
+		.data(data),
+		.BCD0(BCD0),
+		.BCD1(BCD1),
+		.BCD2(BCD2),
+		.BCD3(BCD3),
+		.BCD4(BCD4),
+		.BCD5(BCD5),
+		.BCD6(BCD6),
+		.BCD7(BCD7),
+		.BCD8(BCD8)
+	);
+	
 	initial forever
 		Clk = 1;
 		#5;
