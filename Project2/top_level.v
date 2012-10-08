@@ -50,7 +50,7 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG,reset_n);
 	always @(negedge toggleBtn or negedge reset_n)
 	begin
 		if (~reset_n)
-			enable = 0;
+			enable = 1;
 		else
 			enable = ~enable;
 	end
@@ -103,7 +103,7 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,LEDG,reset_n);
 	//Submodule calls
 	lfsr lfsr1(
 		.clk(slowClk),
-		.rst(~enable),
+		.rst(reset_n),
 		.out(X1)
 	);
 	
