@@ -12,7 +12,7 @@ module binary_to_BCD_Behav(Clk,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BC
 	
 	always@(posedge Clk)
 	begin
-		if(~enable)
+		if(enable)
 		begin
 			if(j<'d37)
 			begin
