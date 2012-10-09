@@ -61,14 +61,14 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 		if (~reset_n)
 			data = 0;
 		else
-			if (enable)
+			if (~enable)
 				data = data + 1;
 	end
 	
 	always@(posedge slowClk)
 	begin
-		if(enable)
-			show7seg = 2'b100;
+		if(~enable)
+			show7seg = 3'b100;
 		
 		case(show7seg)
 			A:begin
