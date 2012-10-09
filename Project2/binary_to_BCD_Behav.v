@@ -18,12 +18,11 @@ module binary_to_BCD_Behav(Clk,enable,data,BCD0,BCD1,BCD2,BCD3,BCD4,BCD5,BCD6,BC
 			begin
 				j = j+1;
 				convert = 1;
-			end 
-			else	
-			begin
+			end else
 				convert = 0;
-				j = 0;
-			end
+		end else begin
+			convert = 0;
+			j = 0;
 		end
 	end
 	
