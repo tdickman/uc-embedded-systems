@@ -68,50 +68,50 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 	always@(posedge slowClk)
 	begin
 		if(enable)
-			show7seg <= 2'b100;
+			show7seg = 2'b100;
 		
 		case(show7seg)
 			A:begin
-				cur7Seg[11:8] <= 4'b1111;
-				cur7Seg[7:4] <= BCD10;
-				cur7Seg[3:0] <= BCD9;
-				HEX3[6:0] <= 7'b0001000;
-				show7seg <= B;
+				cur7Seg[11:8] = 4'b1111;
+				cur7Seg[7:4] = BCD10;
+				cur7Seg[3:0] = BCD9;
+				HEX3[6:0] = 7'b0001000;
+				show7seg = B;
 			  end
 			B:begin
-				cur7Seg[11:8] <= BCD8;
-				cur7Seg[7:4] <= BCD7;
-				cur7Seg[3:0] <= BCD6;
-				HEX3[6:0] <= 7'b0000000;
-				show7seg <= C;
+				cur7Seg[11:8] = BCD8;
+				cur7Seg[7:4] = BCD7;
+				cur7Seg[3:0] = BCD6;
+				HEX3[6:0] = 7'b0000000;
+				show7seg = C;
 			  end
 			C:begin
-				cur7Seg[11:8] <= BCD5;
-				cur7Seg[7:4] <= BCD4;
-				cur7Seg[3:0] <= BCD3;
-				HEX3[6:0] <= 7'b1000110;
-				show7seg <= D;
+				cur7Seg[11:8] = BCD5;
+				cur7Seg[7:4] = BCD4;
+				cur7Seg[3:0] = BCD3;
+				HEX3[6:0] = 7'b1000110;
+				show7seg = D;
 			  end
 			D:begin
-				cur7Seg[11:8] <= BCD2;
-				cur7Seg[7:4] <= BCD1;
-				cur7Seg[3:0] <= BCD0;
-				HEX3[6:0] <= 7'b1000000;
-				show7seg <= A;
+				cur7Seg[11:8] = BCD2;
+				cur7Seg[7:4] = BCD1;
+				cur7Seg[3:0] = BCD0;
+				HEX3[6:0] = 7'b1000000;
+				show7seg = A;
 			  end
 			3'b100:begin
-				cur7Seg[11:8] <= 4'b1111;
-				cur7Seg[7:4] <= 4'b1111;
-				cur7Seg[3:0] <= 4'b1111;
-				HEX3[6:0] <= 7'b0111111;
-				show7seg <= A;
+				cur7Seg[11:8] = 4'b1111;
+				cur7Seg[7:4] = 4'b1111;
+				cur7Seg[3:0] = 4'b1111;
+				HEX3[6:0] = 7'b0111111;
+				show7seg = A;
 			  end
 			default: begin
-						cur7Seg[11:8] <= 4'b1111;
-						cur7Seg[7:4] <= 4'b1111;
-						cur7Seg[3:0] <= 4'b1111;
-						HEX3[6:0] <= 7'b0111111;
-						show7seg <= A;
+						cur7Seg[11:8] = 4'b1111;
+						cur7Seg[7:4] = 4'b1111;
+						cur7Seg[3:0] = 4'b1111;
+						HEX3[6:0] = 7'b0111111;
+						show7seg = A;
 					 end
 		endcase
 	end
