@@ -27,20 +27,43 @@ module binary_to_BCD_Testbench();
 	begin
 		Clk = 0;
 		enable = 0;
+		#100
+		enable = 1;
 		data = 'd650345768;
 		#10000;
+		enable = 0;
+		#500
+		enable = 1;
 		data = 'd1500478987;
 		#10000;
+		enable = 0;
+		#500
+		enable = 1;
 		data = 'd1234593;
 		#10000;
+		enable = 0;
+		#500
+		enable = 1;
 		data = 'd566789321;
 		#10000;
+		enable = 0;
+		#500
+		enable = 1;
 		data = 'd56292734539;
 		#10000;
+		enable = 0;
+		#500
+		enable = 1;
 		data = 'd2938710236;
 		#10000;
-		data = 'd082298316283;
+		enable = 0;
+		#500
+		enable = 1;
+		data = 'd82298316283;
 		#10000;
+		enable = 0;
+		#500
+		enable = 1;
 		$stop;
 	end
 endmodule 
