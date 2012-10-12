@@ -130,21 +130,20 @@ module top_level(toggleBtn,CLOCK_50,HEX0,HEX1,HEX2,HEX3,LEDG,reset_n);
 		.Z(LEDG)
 	);
 	
-	binary_to_BCD_Behav b2bcd1(
-		.Clk(CLOCK_50),
+	BCDConverter simulate(
+		.binary(data),
 		.enable(enable),
-		.data(data),
-		.BCD0(BCD0),
-		.BCD1(BCD1),
-		.BCD2(BCD2),
-		.BCD3(BCD3),
-		.BCD4(BCD4),
-		.BCD5(BCD5),
-		.BCD6(BCD6),
-		.BCD7(BCD7),
-		.BCD8(BCD8),
+		.BCD10(BCD10),
 		.BCD9(BCD9),
-		.BCD10(BCD10)
+		.BCD8(BCD8),
+		.BCD7(BCD7),
+		.BCD6(BCD6),
+		.BCD5(BCD5),
+		.BCD4(BCD4),
+		.BCD3(BCD3),
+		.BCD2(BCD2),
+		.BCD1(BCD1),
+		.BCD0(BCD0)
 	);
 	
 	
