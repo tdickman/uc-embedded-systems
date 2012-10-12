@@ -13,7 +13,7 @@ module top_level_tb();
 	
 	wire [6:0] HEX0,HEX1,HEX2,HEX3;
 	
-	wire LEDG;
+	wire [7:0] LEDG;
 	
 	reg reset_n;
 	
