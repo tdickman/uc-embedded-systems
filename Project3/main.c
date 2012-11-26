@@ -67,7 +67,7 @@ void initPhilosophers()
 {
 	INT8U return_code = OS_NO_ERR;
 
-	char names[4] = {'N', 'E', 'S', 'W'};
+	char names[6] = {'N', 'E', 'S', 'W', '1', '2'};
 
 	// Initialize semaphores
 	int i;
