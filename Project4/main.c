@@ -6,7 +6,7 @@
 #include "alt_ucosii_simple_error_check.h"
 #include "main.h"
 #include "address_map.h"
-// #include "InterruptsHandler.c"
+#include "InterruptsHandler.c"
 
 OS_STK stack[2][TASK_STACKSIZE];
 

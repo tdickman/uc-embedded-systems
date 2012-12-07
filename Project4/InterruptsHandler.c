@@ -1,6 +1,11 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
+
+
 #include "nios2_ctrl_reg_macros.h"
 /* function prototypes */
-void main(void);
+int main(void);
 void interrupt_handler(void);
 void interval_timer_isr(void);
 void pushbutton_ISR(void);
@@ -113,9 +118,23 @@ void interrupt_handler(void)
 int ipending;
 NIOS2_READ_IPENDING(ipending);
 if ( ipending & 0x1 ) // interval timer is interrupt level 0
-interval_timer_isr( );
+//interval_timer_isr( );
 if ( ipending & 0x2 ) // pushbuttons are interrupt level 1
-pushbutton_ISR( );
+//pushbutton_ISR( );
 // else, ignore the interrupt
+	printf("It works!\n");
+printf("Some other interrupt occurred.\n");
 return;
+}
+
+int main(void) {
+	volatile int * KEY_ptr = (int *) 0x01003490; // pushbutton KEY address
+	*(KEY_ptr + 2) = 0xE; /* write to the pushbutton interrupt mask register, and
+	* set 3 mask bits to 1 (bit 0 is Nios II reset) */
+	//NIOS2_WRITE_IENABLE( 0x3 ); /* set interrupt mask bits for levels 0 (interval timer)
+	//* and level 1 (pushbuttons) */
+	NIOS2_WRITE_STATUS( 1 ); // enable Nios II interrupts
+	printf("Main function started!!\n");
+	while(1); // main program simply idles
+	return 0;
 }
