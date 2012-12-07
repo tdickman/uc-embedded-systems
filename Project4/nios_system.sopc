@@ -1,0 +1,4018 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<system name="nios_system">
+    <parameter valueString="1159566290" name="systemHash"/>
+    <parameter valueString="1195166829203" name="timeStamp"/>
+    <parameter valueString="false" name="generateLegacySDK"/>
+    <parameter name="bonusData">bonusData 
+{
+   element Slider_switches
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element clk.clk
+   {
+      datum clock_domain
+      {
+         value = "clk";
+         type = "String";
+      }
+   }
+   element Expansion_JP1.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "268435552";
+         type = "long";
+      }
+   }
+   element Green_LEDs
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element SRAM.avalon_sram_slave
+   {
+      datum baseAddress
+      {
+         value = "134217728";
+         type = "long";
+      }
+   }
+   element Interval_timer.s1
+   {
+      datum baseAddress
+      {
+         value = "268443648";
+         type = "long";
+      }
+   }
+   element Pushbuttons
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element nios_system
+   {
+   }
+   element Pushbuttons.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "268435536";
+         type = "long";
+      }
+   }
+   element Red_LEDs
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element Red_LEDs.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "268435456";
+         type = "long";
+      }
+   }
+   element JTAG_UART.avalon_jtag_slave
+   {
+      datum baseAddress
+      {
+         value = "268439552";
+         type = "long";
+      }
+   }
+   element cpu.jtag_debug_module
+   {
+      datum baseAddress
+      {
+         value = "167772160";
+         type = "long";
+      }
+   }
+   element Green_LEDs.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "268435472";
+         type = "long";
+      }
+   }
+   element Onchip_memory.s2
+   {
+      datum baseAddress
+      {
+         value = "150994944";
+         type = "long";
+      }
+   }
+   element HEX3_HEX0.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "268435488";
+         type = "long";
+      }
+   }
+   element SRAM
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element Expansion_JP2
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element sysid
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+   }
+   element Onchip_memory.s1
+   {
+      datum baseAddress
+      {
+         value = "150994944";
+         type = "long";
+      }
+   }
+   element HEX3_HEX0
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element Slider_switches.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "268435520";
+         type = "long";
+      }
+   }
+   element Onchip_memory
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{memorySize=KBytes}";
+         type = "String";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element Expansion_JP2.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "268435568";
+         type = "long";
+      }
+   }
+   element Serial_port
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element clk
+   {
+   }
+   element Expansion_JP1
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element JTAG_UART
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element Serial_port.avalon_rs232_slave
+   {
+      datum baseAddress
+      {
+         value = "268439568";
+         type = "long";
+      }
+   }
+   element Interval_timer
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element cpu
+   {
+      datum _enabled
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element sysid.control_slave
+   {
+      datum baseAddress
+      {
+         value = "268443680";
+         type = "long";
+      }
+   }
+}
+</parameter>
+    <parameter valueString="false" name="hardcopyCompatible"/>
+    <parameter valueString="CYCLONEII" name="deviceFamily"/>
+    <parameter valueString="false" name="generateLegacySim"/>
+    <parameter valueString="VERILOG" name="hdlLanguage"/>
+    <module version="7.1" name="clk" kind="clock_source">
+        <parameter valueString="true" name="clockFrequencyKnown"/>
+        <parameter valueString="50000000" name="clockFrequency"/>
+    </module>
+    <module version="7.1" name="cpu" kind="altera_nios2">
+        <parameter valueString="" name="userDefinedSettings"/>
+        <parameter valueString="Static" name="setting_branchPredictionType"/>
+        <parameter valueString="_10" name="mmu_processIDNumBits"/>
+        <parameter valueString="32" name="exceptionOffset"/>
+        <parameter valueString="EmbeddedMulFast" name="muldiv_multiplierType"/>
+        <parameter valueString="_4096" name="icache_size"/>
+        <parameter valueString="_128" name="debug_OCIOnchipTrace"/>
+        <parameter valueString="Small" name="impl"/>
+        <parameter valueString="_4" name="mmu_uitlbNumEntries"/>
+        <parameter valueString="Onchip_memory.s1" name="exceptionSlave"/>
+        <parameter valueString="false" name="dcache_omitDataMaster"/>
+        <parameter valueString="0" name="mmu_TLBMissExcOffset"/>
+        <parameter valueString="false" name="setting_illegalMemAccessDetection"/>
+        <parameter valueString="32" name="breakOffset"/>
+        <parameter valueString="true" name="debug_embeddedPLL"/>
+        <parameter valueString="false" name="setting_debugSimGen"/>
+        <parameter valueString="false" name="setting_alwaysBypassDCache"/>
+        <parameter valueString="_0" name="icache_numTCIM"/>
+        <parameter valueString="false" name="setting_showInternalSettings"/>
+        <parameter valueString="false" name="setting_illegalInstructionsTrap"/>
+        <parameter valueString="0" name="resetOffset"/>
+        <parameter valueString="false" name="setting_bhtIndexPcOnly"/>
+        <parameter valueString="true" name="setting_HDLSimCachesCleared"/>
+        <parameter valueString="true" name="setting_alwaysEncrypt"/>
+        <parameter valueString="false" name="setting_activateModelChecker"/>
+        <parameter valueString="_4" name="dcache_lineSize"/>
+        <parameter valueString="false" name="setting_allowFullAddressRange"/>
+        <parameter valueString="_7" name="mmu_dtlbPtrSz"/>
+        <parameter valueString="_4" name="mmu_itlbNumWays"/>
+        <parameter valueString="false" name="cpuReset"/>
+        <parameter valueString="true" name="setting_clearXBitsLDNonBypass"/>
+        <parameter valueString="_4" name="mmu_dtlbNumWays"/>
+        <parameter valueString="Onchip_memory.s1" name="resetSlave"/>
+        <parameter valueString="_32" name="setting_perfCounterWidth"/>
+        <parameter valueString="" name="mmu_TLBMissExcSlave"/>
+        <parameter name="breakSlave">cpu.jtag_debug_module</parameter>
+        <parameter valueString="Level1" name="debug_level"/>
+        <parameter valueString="false" name="muldiv_divider"/>
+        <parameter valueString="false" name="dcache_bursts"/>
+        <parameter valueString="true" name="setting_activateMonitors"/>
+        <parameter valueString="true" name="setting_bit31BypassDCache"/>
+        <parameter valueString="Automatic" name="icache_ramBlockType"/>
+        <parameter valueString="_8" name="setting_bhtPtrSz"/>
+        <parameter valueString="false" name="debug_debugReqSignals"/>
+        <parameter valueString="_6" name="mmu_udtlbNumEntries"/>
+        <parameter valueString="_0" name="dcache_numTCDM"/>
+        <parameter valueString="false" name="setting_fullWaveformSignals"/>
+        <parameter valueString="false" name="setting_performanceCounter"/>
+        <parameter valueString="_7" name="mmu_itlbPtrSz"/>
+        <parameter valueString="_2048" name="dcache_size"/>
+        <parameter valueString="Automatic" name="dcache_ramBlockType"/>
+        <parameter valueString="true" name="setting_activateTrace"/>
+        <parameter valueString="false" name="setting_HBreakTest"/>
+        <parameter valueString="false" name="setting_exportPCB"/>
+        <parameter valueString="false" name="setting_activateTestEndChecker"/>
+        <parameter valueString="None" name="icache_burstType"/>
+        <parameter valueString="false" name="setting_showUnpublishedSettings"/>
+        <parameter valueString="true" name="debug_triggerArming"/>
+        <parameter valueString="false" name="mmu_enabled"/>
+    </module>
+    <module version="6.0" name="SRAM" kind="altera_up_avalon_sram_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE SRAM
+{
+   class = "altera_up_avalon_sram";
+   class_version = "6.0";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "sram";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         MESSAGES 
+         {
+         }
+         Is_Collapsed = "1";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_sram_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "18";
+         Address_Alignment = "dynamic";
+         Data_Width = "16";
+         Has_Base_Address = "1";
+         Has_IRQ = "0";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "2";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "1";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+         Base_Address = "0x08000000";
+         Is_Base_Locked = "1";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "2";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "1";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "18";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "2";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "16";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT SRAM_DQ
+         {
+            width = "16";
+            width_expression = "";
+            direction = "inout";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT SRAM_ADDR
+         {
+            width = "18";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT SRAM_LB_N
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT SRAM_UB_N
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT SRAM_CE_N
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT SRAM_OE_N
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT SRAM_WE_N
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "16";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module version="7.1" name="Onchip_memory" kind="altera_avalon_onchip_memory2">
+        <parameter valueString="32" name="dataWidth"/>
+        <parameter valueString="true" name="dualPort"/>
+        <parameter valueString="false" name="simAllowMRAMContentsFile"/>
+        <parameter valueString="true" name="writable"/>
+        <parameter valueString="M4K" name="blockType"/>
+        <parameter valueString="16384" name="memorySize"/>
+        <parameter valueString="false" name="useShallowMemBlocks"/>
+        <parameter valueString="1" name="slave1Latency"/>
+        <parameter valueString="true" name="initMemContent"/>
+        <parameter valueString="Onchip_memory" name="initializationFileName"/>
+        <parameter valueString="false" name="useNonDefaultInitFile"/>
+        <parameter valueString="1" name="slave2Latency"/>
+    </module>
+    <module version="6.1" name="Red_LEDs" kind="altera_up_avalon_parallel_port_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE Red_LEDs
+{
+   class = "altera_up_avalon_parallel_port";
+   class_version = "6.1";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "parallel_port";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         Settings_Summary = "&lt;br&gt;Parallel Port9 Bits";
+         MESSAGES 
+         {
+         }
+         Is_Collapsed = "1";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT SW
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT KEY
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT in_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT bidir_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDG
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDR
+      {
+         width = "10";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT HEX0
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX1
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX2
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX3
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX4
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX5
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX6
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX7
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT out_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_0
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_1
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         de_board = "1";
+         default_config = "3";
+         reset_key = "0";
+         led_colour = "1";
+         seven_segment = "0";
+         gpio_port = "0";
+         data_width = "10";
+         data_direction = "3";
+         capture_en = "0";
+         capture_type = "1";
+         irq_en = "0";
+         irq_type = "1";
+      }
+      PARAMETERS 
+      {
+         DW = "9";
+      }
+      SECTIONS 
+      {
+         USING_SLIDER_SWITCHES = "0";
+         USING_PUSH_BUTTONS = "0";
+         USING_INPUT_PORT = "0";
+         USING_GPIO_0 = "0";
+         USING_GPIO_1 = "0";
+         USING_BIDIR_PORT = "0";
+         USING_GREEN_LEDS = "0";
+         USING_RED_LEDS = "1";
+         USING_LOW_SEVEN_SEGMENT = "0";
+         USING_HIGH_SEVEN_SEGMENT = "0";
+         USING_OUTPUT_PORT = "0";
+         USING_INTERRUPTS = "0";
+         USING_LEVEL_INTERRUPTS = "0";
+         USING_CAPTURE = "0";
+         USING_EDGE_HIGH_CAPTURE = "0";
+         USING_EDGE_LOW_CAPTURE = "0";
+         USING_EDGE_BOTH_CAPTURE = "0";
+         USING_DATA_OUT = "1";
+         USING_INOUT = "0";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_parallel_port_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "2";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "0";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+         Base_Address = "0x10000000";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "2";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+            Is_Enabled = "0";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module version="6.1" name="Green_LEDs" kind="altera_up_avalon_parallel_port_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE Green_LEDs
+{
+   class = "altera_up_avalon_parallel_port";
+   class_version = "6.1";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "parallel_port";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         Settings_Summary = "&lt;br&gt;Parallel Port7 Bits";
+         MESSAGES 
+         {
+         }
+         Is_Collapsed = "1";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT SW
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT KEY
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT in_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT bidir_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDG
+      {
+         width = "8";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT LEDR
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX0
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX1
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX2
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX3
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX4
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX5
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX6
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX7
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT out_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_0
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_1
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         de_board = "1";
+         default_config = "3";
+         reset_key = "0";
+         led_colour = "0";
+         seven_segment = "0";
+         gpio_port = "0";
+         data_width = "8";
+         data_direction = "3";
+         capture_en = "1";
+         capture_type = "2";
+         irq_en = "0";
+         irq_type = "2";
+      }
+      PARAMETERS 
+      {
+         DW = "7";
+      }
+      SECTIONS 
+      {
+         USING_SLIDER_SWITCHES = "0";
+         USING_PUSH_BUTTONS = "0";
+         USING_INPUT_PORT = "0";
+         USING_GPIO_0 = "0";
+         USING_GPIO_1 = "0";
+         USING_BIDIR_PORT = "0";
+         USING_GREEN_LEDS = "1";
+         USING_RED_LEDS = "0";
+         USING_LOW_SEVEN_SEGMENT = "0";
+         USING_HIGH_SEVEN_SEGMENT = "0";
+         USING_OUTPUT_PORT = "0";
+         USING_INTERRUPTS = "0";
+         USING_LEVEL_INTERRUPTS = "0";
+         USING_CAPTURE = "0";
+         USING_EDGE_HIGH_CAPTURE = "0";
+         USING_EDGE_LOW_CAPTURE = "0";
+         USING_EDGE_BOTH_CAPTURE = "0";
+         USING_DATA_OUT = "1";
+         USING_INOUT = "0";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_parallel_port_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "2";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "0";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+         Base_Address = "0x10000010";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "2";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+            Is_Enabled = "0";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module version="6.1" name="HEX3_HEX0" kind="altera_up_avalon_parallel_port_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE HEX3_HEX0
+{
+   class = "altera_up_avalon_parallel_port";
+   class_version = "6.1";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "parallel_port";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         Settings_Summary = "&lt;br&gt;Parallel Port31 Bits";
+         MESSAGES 
+         {
+         }
+         Is_Collapsed = "1";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT SW
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT KEY
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT in_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT bidir_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDG
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDR
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX0
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT HEX1
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT HEX2
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT HEX3
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT HEX4
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX5
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX6
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX7
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT out_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_0
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_1
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         de_board = "1";
+         default_config = "4";
+         reset_key = "0";
+         led_colour = "0";
+         seven_segment = "0";
+         gpio_port = "0";
+         data_width = "32";
+         data_direction = "3";
+         capture_en = "1";
+         capture_type = "2";
+         irq_en = "0";
+         irq_type = "2";
+      }
+      PARAMETERS 
+      {
+         DW = "31";
+      }
+      SECTIONS 
+      {
+         USING_SLIDER_SWITCHES = "0";
+         USING_PUSH_BUTTONS = "0";
+         USING_INPUT_PORT = "0";
+         USING_GPIO_0 = "0";
+         USING_GPIO_1 = "0";
+         USING_BIDIR_PORT = "0";
+         USING_GREEN_LEDS = "0";
+         USING_RED_LEDS = "0";
+         USING_LOW_SEVEN_SEGMENT = "1";
+         USING_HIGH_SEVEN_SEGMENT = "0";
+         USING_OUTPUT_PORT = "0";
+         USING_INTERRUPTS = "0";
+         USING_LEVEL_INTERRUPTS = "0";
+         USING_CAPTURE = "0";
+         USING_EDGE_HIGH_CAPTURE = "0";
+         USING_EDGE_LOW_CAPTURE = "0";
+         USING_EDGE_BOTH_CAPTURE = "0";
+         USING_DATA_OUT = "1";
+         USING_INOUT = "0";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_parallel_port_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "2";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "0";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+         Base_Address = "0x10000020";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "2";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+            Is_Enabled = "0";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module version="6.1" name="Slider_switches" kind="altera_up_avalon_parallel_port_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE Slider_switches
+{
+   class = "altera_up_avalon_parallel_port";
+   class_version = "6.1";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "parallel_port";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         Settings_Summary = "&lt;br&gt;Parallel Port9 Bits";
+         MESSAGES 
+         {
+         }
+         Is_Collapsed = "1";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT SW
+      {
+         width = "10";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT KEY
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT in_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT bidir_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDG
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDR
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX0
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX1
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX2
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX3
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX4
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX5
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX6
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX7
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT out_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_0
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_1
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         de_board = "1";
+         default_config = "2";
+         reset_key = "0";
+         led_colour = "0";
+         seven_segment = "0";
+         gpio_port = "0";
+         data_width = "10";
+         data_direction = "1";
+         capture_en = "0";
+         capture_type = "2";
+         irq_en = "0";
+         irq_type = "2";
+      }
+      PARAMETERS 
+      {
+         DW = "9";
+      }
+      SECTIONS 
+      {
+         USING_SLIDER_SWITCHES = "1";
+         USING_PUSH_BUTTONS = "0";
+         USING_INPUT_PORT = "0";
+         USING_GPIO_0 = "0";
+         USING_GPIO_1 = "0";
+         USING_BIDIR_PORT = "0";
+         USING_GREEN_LEDS = "0";
+         USING_RED_LEDS = "0";
+         USING_LOW_SEVEN_SEGMENT = "0";
+         USING_HIGH_SEVEN_SEGMENT = "0";
+         USING_OUTPUT_PORT = "0";
+         USING_INTERRUPTS = "0";
+         USING_LEVEL_INTERRUPTS = "0";
+         USING_CAPTURE = "0";
+         USING_EDGE_HIGH_CAPTURE = "0";
+         USING_EDGE_LOW_CAPTURE = "0";
+         USING_EDGE_BOTH_CAPTURE = "0";
+         USING_DATA_OUT = "0";
+         USING_INOUT = "0";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_parallel_port_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "2";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "0";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+         Base_Address = "0x10000040";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "2";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+            Is_Enabled = "0";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module version="6.1" name="Expansion_JP1" kind="altera_up_avalon_parallel_port_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE Expansion_JP1
+{
+   class = "altera_up_avalon_parallel_port";
+   class_version = "6.1";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "parallel_port";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         Settings_Summary = "&lt;br&gt;Parallel Port31 Bits";
+         MESSAGES 
+         {
+         }
+         Is_Collapsed = "1";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT SW
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT KEY
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT in_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT bidir_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDG
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDR
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX0
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX1
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX2
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX3
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX4
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX5
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX6
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX7
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT out_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_0
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT GPIO_1
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         de_board = "1";
+         default_config = "5";
+         reset_key = "0";
+         led_colour = "0";
+         seven_segment = "0";
+         gpio_port = "0";
+         data_width = "32";
+         data_direction = "2";
+         capture_en = "1";
+         capture_type = "2";
+         irq_en = "1";
+         irq_type = "2";
+      }
+      PARAMETERS 
+      {
+         DW = "31";
+      }
+      SECTIONS 
+      {
+         USING_SLIDER_SWITCHES = "0";
+         USING_PUSH_BUTTONS = "0";
+         USING_INPUT_PORT = "0";
+         USING_GPIO_0 = "1";
+         USING_GPIO_1 = "0";
+         USING_BIDIR_PORT = "0";
+         USING_GREEN_LEDS = "0";
+         USING_RED_LEDS = "0";
+         USING_LOW_SEVEN_SEGMENT = "0";
+         USING_HIGH_SEVEN_SEGMENT = "0";
+         USING_OUTPUT_PORT = "0";
+         USING_INTERRUPTS = "1";
+         USING_LEVEL_INTERRUPTS = "0";
+         USING_CAPTURE = "1";
+         USING_EDGE_HIGH_CAPTURE = "0";
+         USING_EDGE_LOW_CAPTURE = "1";
+         USING_EDGE_BOTH_CAPTURE = "0";
+         USING_DATA_OUT = "1";
+         USING_INOUT = "1";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_parallel_port_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "2";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "1";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+         Base_Address = "0x10000060";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "2";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+            Is_Enabled = "1";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module version="6.1" name="Expansion_JP2" kind="altera_up_avalon_parallel_port_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE Expansion_JP2
+{
+   class = "altera_up_avalon_parallel_port";
+   class_version = "6.1";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "parallel_port";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         Settings_Summary = "&lt;br&gt;Parallel Port31 Bits";
+         MESSAGES 
+         {
+         }
+         Is_Collapsed = "1";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT SW
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT KEY
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT in_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT bidir_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDG
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDR
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX0
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX1
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX2
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX3
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX4
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX5
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX6
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX7
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT out_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_0
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_1
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         de_board = "1";
+         default_config = "5";
+         reset_key = "0";
+         led_colour = "0";
+         seven_segment = "0";
+         gpio_port = "1";
+         data_width = "32";
+         data_direction = "2";
+         capture_en = "1";
+         capture_type = "2";
+         irq_en = "1";
+         irq_type = "2";
+      }
+      PARAMETERS 
+      {
+         DW = "31";
+      }
+      SECTIONS 
+      {
+         USING_SLIDER_SWITCHES = "0";
+         USING_PUSH_BUTTONS = "0";
+         USING_INPUT_PORT = "0";
+         USING_GPIO_0 = "0";
+         USING_GPIO_1 = "1";
+         USING_BIDIR_PORT = "0";
+         USING_GREEN_LEDS = "0";
+         USING_RED_LEDS = "0";
+         USING_LOW_SEVEN_SEGMENT = "0";
+         USING_HIGH_SEVEN_SEGMENT = "0";
+         USING_OUTPUT_PORT = "0";
+         USING_INTERRUPTS = "1";
+         USING_LEVEL_INTERRUPTS = "0";
+         USING_CAPTURE = "1";
+         USING_EDGE_HIGH_CAPTURE = "0";
+         USING_EDGE_LOW_CAPTURE = "1";
+         USING_EDGE_BOTH_CAPTURE = "0";
+         USING_DATA_OUT = "1";
+         USING_INOUT = "1";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_parallel_port_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "2";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "1";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+         Base_Address = "0x10000070";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "2";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+            Is_Enabled = "1";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module version="7.1" name="JTAG_UART" kind="altera_avalon_jtag_uart">
+        <parameter valueString="8" name="readIRQThreshold"/>
+        <parameter valueString="" name="simInputCharacterStream"/>
+        <parameter valueString="0" name="hubInstanceID"/>
+        <parameter valueString="64" name="readBufferDepth"/>
+        <parameter valueString="false" name="allowMultipleConnections"/>
+        <parameter valueString="64" name="writeBufferDepth"/>
+        <parameter valueString="8" name="writeIRQThreshold"/>
+        <parameter valueString="false" name="useRegistersForWriteBuffer"/>
+        <parameter valueString="false" name="useRegistersForReadBuffer"/>
+        <parameter name="simInteractiveOptions">INTERACTIVE_ASCII_OUTPUT</parameter>
+    </module>
+    <module version="6.0" name="Serial_port" kind="altera_up_avalon_rs232_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE Serial_port
+{
+   class = "altera_up_avalon_rs232";
+   class_version = "6.0";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "uart";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         MESSAGES 
+         {
+         }
+         Is_Collapsed = "1";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         baud_rate = "115200";
+         parity = "1";
+         extra_stop_bit = "0";
+      }
+      PARAMETERS 
+      {
+         BAUD_COUNTER_WIDTH = "9";
+         BAUD_TICK_INCREMENT = "9d1";
+         BAUD_TICK_COUNT = "9d435";
+         HALF_BAUD_TICK_COUNT = "9d218";
+         TOTAL_DATA_WIDTH = "11";
+         DATA_WIDTH = "8";
+         ODD_PARITY = "1b1";
+      }
+      SECTIONS 
+      {
+         USE_EXTRA_STOP_BIT = "0";
+         USE_DATA_WIDTH_7 = "0";
+         USE_DATA_WIDTH_8 = "1";
+         USE_DATA_WIDTH_9 = "0";
+         USE_PARITY = "1";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_rs232_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "1";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "1";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+         MASTERED_BY cpu/data_master
+         {
+            priority = "1";
+         }
+         IRQ_MASTER cpu/data_master
+         {
+            IRQ_Number = "10";
+         }
+         Base_Address = "0x10001010";
+         Is_Base_Locked = "0";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT UART_RXD
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT UART_TXD
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module version="7.1" name="Interval_timer" kind="altera_avalon_timer">
+        <parameter valueString="CUSTOM" name="timerPreset"/>
+        <parameter valueString="125.0" name="period"/>
+        <parameter valueString="false" name="resetOutput"/>
+        <parameter valueString="MSEC" name="periodUnits"/>
+        <parameter valueString="false" name="fixedPeriod"/>
+        <parameter valueString="false" name="alwaysRun"/>
+        <parameter valueString="false" name="timeoutPulseOutput"/>
+        <parameter valueString="true" name="snapshot"/>
+    </module>
+    <module version="7.1" name="sysid" kind="altera_avalon_sysid">
+        <parameter valueString="1195166829" name="timestamp"/>
+        <parameter valueString="1159566290" name="id"/>
+    </module>
+    <module version="6.1" name="Pushbuttons" kind="altera_up_avalon_parallel_port_classic">
+        <parameter valueString="" name="sharedPorts"/>
+        <parameter name="instancePTF">MODULE Pushbuttons
+{
+   class = "altera_up_avalon_parallel_port";
+   class_version = "6.1";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "parallel_port";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         MESSAGES 
+         {
+         }
+         Settings_Summary = "&lt;br&gt;Parallel Port3 Bits";
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT SW
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT KEY
+      {
+         width = "4";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "1";
+      }
+      PORT in_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "input";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_0
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT GPIO_1
+      {
+         width = "36";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT bidir_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "inout";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDG
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT LEDR
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX0
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX1
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX2
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX3
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX4
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX5
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX6
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT HEX7
+      {
+         width = "7";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+      PORT out_port
+      {
+         width = "0";
+         width_expression = "";
+         direction = "output";
+         type = "export";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+         Is_Enabled = "0";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         de_board = "1";
+         default_config = "1";
+         reset_key = "1";
+         led_colour = "0";
+         seven_segment = "0";
+         gpio_port = "0";
+         data_width = "4";
+         data_direction = "1";
+         capture_en = "1";
+         capture_type = "1";
+         irq_en = "1";
+         irq_type = "2";
+      }
+      PARAMETERS 
+      {
+         DW = "3";
+      }
+      SECTIONS 
+      {
+         USING_SLIDER_SWITCHES = "0";
+         USING_PUSH_BUTTONS = "1";
+         USING_INPUT_PORT = "0";
+         USING_INOUT = "0";
+         USING_GPIO_0 = "0";
+         USING_GPIO_1 = "0";
+         USING_BIDIR_PORT = "0";
+         USING_GREEN_LEDS = "0";
+         USING_RED_LEDS = "0";
+         USING_LOW_SEVEN_SEGMENT = "0";
+         USING_HIGH_SEVEN_SEGMENT = "0";
+         USING_OUTPUT_PORT = "0";
+         USING_INTERRUPTS = "1";
+         USING_LEVEL_INTERRUPTS = "0";
+         USING_CAPTURE = "1";
+         USING_EDGE_HIGH_CAPTURE = "1";
+         USING_EDGE_LOW_CAPTURE = "0";
+         USING_EDGE_BOTH_CAPTURE = "0";
+         USING_DATA_OUT = "0";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_parallel_port_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "2";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "1";
+         Setup_Time = "0cycles";
+         Hold_Time = "0cycles";
+         Read_Wait_States = "0cycles";
+         Write_Wait_States = "0cycles";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "0";
+            Write_Wait_Value = "0";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "0";
+            Is_Memory_Device = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "2";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+            Is_Enabled = "1";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <connection version="7.1" start="clk.clk" kind="clock" end="cpu.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="SRAM.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Onchip_memory.clk2"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Onchip_memory.clk1"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Red_LEDs.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Green_LEDs.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="HEX3_HEX0.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Slider_switches.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Expansion_JP1.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Expansion_JP2.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="JTAG_UART.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Serial_port.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Interval_timer.clk"/>
+    <connection version="7.1" start="clk.clk" kind="clock" end="sysid.clk"/>
+    <connection version="6.1" start="cpu.instruction_master" kind="avalon" end="cpu.jtag_debug_module">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x0a000000" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="cpu.jtag_debug_module">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x0a000000" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.instruction_master" kind="avalon" end="SRAM.avalon_sram_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x08000000" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="SRAM.avalon_sram_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x08000000" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.instruction_master" kind="avalon" end="Onchip_memory.s1">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x09000000" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Onchip_memory.s2">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x09000000" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Red_LEDs.avalon_parallel_port_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10000000" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Green_LEDs.avalon_parallel_port_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10000010" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="HEX3_HEX0.avalon_parallel_port_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10000020" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Slider_switches.avalon_parallel_port_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10000040" name="baseAddress"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Expansion_JP1.avalon_parallel_port_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10000060" name="baseAddress"/>
+    </connection>
+    <connection version="7.1" start="cpu.d_irq" kind="interrupt" end="Expansion_JP1.avalon_parallel_port_slave_irq">
+        <parameter valueString="11" name="irqNumber"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Expansion_JP2.avalon_parallel_port_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10000070" name="baseAddress"/>
+    </connection>
+    <connection version="7.1" start="cpu.d_irq" kind="interrupt" end="Expansion_JP2.avalon_parallel_port_slave_irq">
+        <parameter valueString="12" name="irqNumber"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="JTAG_UART.avalon_jtag_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10001000" name="baseAddress"/>
+    </connection>
+    <connection version="7.1" start="cpu.d_irq" kind="interrupt" end="JTAG_UART.irq">
+        <parameter valueString="8" name="irqNumber"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Serial_port.avalon_rs232_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10001010" name="baseAddress"/>
+    </connection>
+    <connection version="7.1" start="cpu.d_irq" kind="interrupt" end="Serial_port.avalon_rs232_slave_irq">
+        <parameter valueString="10" name="irqNumber"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Interval_timer.s1">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10002000" name="baseAddress"/>
+    </connection>
+    <connection version="7.1" start="cpu.d_irq" kind="interrupt" end="Interval_timer.irq">
+        <parameter valueString="0" name="irqNumber"/>
+    </connection>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="sysid.control_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10002020" name="baseAddress"/>
+    </connection>
+    <connection version="7.1" start="clk.clk" kind="clock" end="Pushbuttons.clk"/>
+    <connection version="6.1" start="cpu.data_master" kind="avalon" end="Pushbuttons.avalon_parallel_port_slave">
+        <parameter valueString="1" name="arbitrationPriority"/>
+        <parameter valueString="0x10000050" name="baseAddress"/>
+    </connection>
+    <connection version="7.1" start="cpu.d_irq" kind="interrupt" end="Pushbuttons.avalon_parallel_port_slave_irq">
+        <parameter valueString="1" name="irqNumber"/>
+    </connection>
+</system>
+
