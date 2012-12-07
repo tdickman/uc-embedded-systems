@@ -14,4 +14,6 @@
 #define FALSE 0
 #define TRUE 1
 
+#define SLEEP(n) if(sleepAndSeeIfDeathIsNeeded(n)){return;}
+
 #endif /* ENUMERATIONS_H_ */
