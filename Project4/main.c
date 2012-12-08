@@ -46,11 +46,12 @@ int sleepAndSeeIfDeathIsNeeded(int seconds) {
 }
 
 void poller() {
+	int lastBtn, curISRState;
+	int pushbutton_old, slider_switch_old;
 	while (1) {
 		printf("Poller started...\n");
-		int oldISRState;
-		int pushbutton_old = *pushbutton_ptr;
-		int slider_switch_old = *slider_switch_ptr;
+		pushbutton_old = *pushbutton_ptr;
+		slider_switch_old = *slider_switch_ptr;
 		// Stay here until someone changes
 		//while( (*pushbutton_ptr == pushbutton_old) );
 		while( ((pushbutton_old & ~*pushbutton_ptr) == 0x0) & (( (*slider_switch_ptr & 0x3) == (slider_switch_old & 0x3) )));
@@ -61,28 +62,29 @@ void poller() {
 		pushbutton_old = *pushbutton_ptr;
 		slider_switch_old = *slider_switch_ptr;
 
-		oldISRState = ISRState;
 		// Check what was pressed
 		if (( ~(*pushbutton_ptr) & BTN_BROKEN) == BTN_BROKEN ) { // Broken
 			printf("Broken mode detected\n");
-			ISRState = BROKEN_MODE;
+			lastBtn = BROKEN_MODE;
 		} else if (( *slider_switch_ptr & SW_MANUAL_MODE) == SW_MANUAL_MODE ){ // Check if Emergency, broken, or manual
 			printf("Manual mode detected\n");
-			ISRState = MANUAL_MODE;
+			lastBtn = MANUAL_MODE;
 		} else if ( ( ~(*pushbutton_ptr) & BTN_EMERGENCY) == BTN_EMERGENCY ) { // Emergency
 			printf("Emergency mode detected\n");
-			ISRState = EMERGENCY_MODE;
+			lastBtn = EMERGENCY_MODE;
 		} else if ( ( ~(*pushbutton_ptr) & BTN_TURN) == BTN_TURN) { // Turn
 			printf("Turn\n");
-			ISRState = TURN_MODE;
+			lastBtn = TURN_MODE;
 		} else if ( ( ~(*pushbutton_ptr) & BTN_PEDESTRIAN) == BTN_PEDESTRIAN) { // Pedestrian
 			printf("Pedestrian\n");
-			ISRState = PEDESTRIAN_MODE;
+			lastBtn = PEDESTRIAN_MODE;
 		}
 
+		curISRState = ISRState;
+		ISRState = lastBtn; // Set new mode
 		// Determine if E|B|M mode
 		if (ISRState < 3) {
-			if (ISRState < oldISRState) {
+			if (ISRState < curISRState) {
 				// kill current task
 				causeDeath();
 			}
