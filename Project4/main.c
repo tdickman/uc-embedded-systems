@@ -101,7 +101,22 @@ void poller() {
 }
 
 void manual() {
-	//if ( deathIsNeeded() ) { return; }
+	printf("Entering manual state\n");
+	if (SW1 == 0) {
+		*(green_LED_ptr) = MRED | SGRE;
+		SLEEP(10); // Sleep 10 seconds
+		*(green_LED_ptr) = MRED | SYEL;
+		SLEEP(2);
+		*(green_LED_ptr) = MRED | SRED;
+		SLEEP(2);
+	} else {
+		*(green_LED_ptr) = MGRE | SRED;
+		SLEEP(10);
+		*(green_LED_ptr) = MYEL | SRED;
+		SLEEP(2);
+		*(green_LED_ptr) = MRED | SRED;
+		SLEEP(2);
+	}
 	return;
 }
 
