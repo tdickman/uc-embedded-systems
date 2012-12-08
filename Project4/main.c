@@ -14,6 +14,7 @@ OS_STK stack3[TASK_STACKSIZE];
 volatile int ISRState = NORMAL_MODE;
 volatile int complete = FALSE;
 volatile int killTask = FALSE;
+volatile int curISRState = NORMAL_MODE;
 
 volatile int* pushbutton_ptr	= (int *) PUSHBUTTON_BASE;
 volatile int* slider_switch_ptr = (int *) SLIDER_SWITCH_BASE;
@@ -46,15 +47,20 @@ int sleepAndSeeIfDeathIsNeeded(int seconds) {
 }
 
 void poller() {
-	int lastBtn, curISRState;
+	int lastBtn;
 	int pushbutton_old, slider_switch_old;
+	pushbutton_old = *pushbutton_ptr;
+	slider_switch_old = *slider_switch_ptr;
 	while (1) {
 		printf("Poller started...\n");
-		pushbutton_old = *pushbutton_ptr;
-		slider_switch_old = *slider_switch_ptr;
 		// Stay here until someone changes
 		//while( (*pushbutton_ptr == pushbutton_old) );
-		while( ((pushbutton_old & ~*pushbutton_ptr) == 0x0) & (( (*slider_switch_ptr & 0x3) == (slider_switch_old & 0x3) )));
+		while( ((pushbutton_old & ~*pushbutton_ptr) == 0x0) & (( (*slider_switch_ptr & 0x3) == (slider_switch_old & 0x3) ))) {
+			if ((~pushbutton_old & *pushbutton_ptr) != 0x0) {
+				pushbutton_old = *pushbutton_ptr;
+				slider_switch_old = *slider_switch_ptr;
+			}
+		}
 
 		printf("Something was pressed\n");
 
@@ -80,12 +86,14 @@ void poller() {
 			lastBtn = PEDESTRIAN_MODE;
 		}
 
-		curISRState = ISRState;
 		ISRState = lastBtn; // Set new mode
 		// Determine if E|B|M mode
 		if (ISRState < 3) {
-			if (ISRState < curISRState) {
+			if (ISRState < curISRState) { // New task is higher priority
 				// kill current task
+				causeDeath();
+			} else if ( (curISRState == BROKEN_MODE) & (ISRState == BROKEN_MODE) ) { // New button is broken mode, and we are in broken mode
+				ISRState = NORMAL_MODE;
 				causeDeath();
 			}
 		}
@@ -156,25 +164,32 @@ void normal() {
 void monitorThread(void *pdata) {
 	while (1) {
 		printf("Beginning of monitor thread.\n");
+		curISRState = ISRState;
 		switch (ISRState) {
 			case MANUAL_MODE:
 				ISRState = NORMAL_MODE; // Clear flag
 				manual();
+				break;
 			case EMERGENCY_MODE:
 				ISRState = NORMAL_MODE; // Clear flag
 				emergency();
+				break;
 			case BROKEN_MODE:
 				ISRState = NORMAL_MODE; // Clear flag
 				broken();
+				break;
 			case TURN_MODE:
 				ISRState = NORMAL_MODE; // Clear flag
 				turnLane();
+				break;
 			case PEDESTRIAN_MODE:
 				ISRState = NORMAL_MODE; // Clear flag
 				pedestrian();
+				break;
 			default:
 				ISRState = NORMAL_MODE; // Clear flag
 				normal();
+				break;
 		}
 	}
 }
@@ -183,7 +198,7 @@ int main (int argc, char* argv[], char* envp[])
 {
 	printf("We just started up!\n");
 	/*while(1){
-		if ( ( ~(*pushbutton_ptr) & BTN_PEDESTRIAN) == BTN_PEDESTRIAN) {
+		if ( ( ~(*pushbutton_ptr) & BTNh_PEDESTRIAN) == BTN_PEDESTRIAN) {
 			printf("PED\n");
 		} else {
 			printf("PED is jumping\n");
