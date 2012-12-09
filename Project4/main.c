@@ -55,7 +55,7 @@ void poller() {
 		printf("Poller started...\n");
 		// Stay here until someone changes
 		//while( (*pushbutton_ptr == pushbutton_old) );
-		while( ((pushbutton_old & ~*pushbutton_ptr) == 0x0) & (( (*slider_switch_ptr & 0x3) == (slider_switch_old & 0x3) ))) {
+		while( ((pushbutton_old & ~*pushbutton_ptr) == 0x0) & (( (*slider_switch_ptr & 0x1) == (slider_switch_old & 0x1) ))) {
 			if ((~pushbutton_old & *pushbutton_ptr) != 0x0) {
 				pushbutton_old = *pushbutton_ptr;
 				slider_switch_old = *slider_switch_ptr;
@@ -72,7 +72,7 @@ void poller() {
 		if (( ~(*pushbutton_ptr) & BTN_BROKEN) == BTN_BROKEN ) { // Broken
 			printf("Broken mode detected\n");
 			lastBtn = BROKEN_MODE;
-		} else if (( *slider_switch_ptr & SW_MANUAL_MODE) == SW_MANUAL_MODE ){ // Check if Emergency, broken, or manual
+		} else if (( *slider_switch_ptr & SW_MANUAL_MODE) == SW_MANUAL_MODE ){ // Manual
 			printf("Manual mode detected\n");
 			lastBtn = MANUAL_MODE;
 		} else if ( ( ~(*pushbutton_ptr) & BTN_EMERGENCY) == BTN_EMERGENCY ) { // Emergency
@@ -84,6 +84,10 @@ void poller() {
 		} else if ( ( ~(*pushbutton_ptr) & BTN_PEDESTRIAN) == BTN_PEDESTRIAN) { // Pedestrian
 			printf("Pedestrian\n");
 			lastBtn = PEDESTRIAN_MODE;
+		} else { // Manual mode off
+			printf("Manual mode turned off\n");
+			causeDeath();
+			lastBtn = NORMAL_MODE; // Enter normal mode
 		}
 
 		ISRState = lastBtn; // Set new mode
@@ -102,20 +106,26 @@ void poller() {
 
 void manual() {
 	printf("Entering manual state\n");
-	if (SW1 == 0) {
-		*(green_LED_ptr) = MRED | SGRE;
-		SLEEP(10); // Sleep 10 seconds
-		*(green_LED_ptr) = MRED | SYEL;
-		SLEEP(2);
-		*(green_LED_ptr) = MRED | SRED;
-		SLEEP(2);
-	} else {
-		*(green_LED_ptr) = MGRE | SRED;
-		SLEEP(10);
-		*(green_LED_ptr) = MYEL | SRED;
-		SLEEP(2);
-		*(green_LED_ptr) = MRED | SRED;
-		SLEEP(2);
+	while (1) {
+		if ( (*slider_switch_ptr & SW_MANUAL_OP) == SW_MANUAL_OP) { // Main green
+			*(green_LED_ptr) = MRED | SRED;
+			SLEEP(2);
+			*(green_LED_ptr) = MGRE | SRED;
+			while ( (*slider_switch_ptr & SW_MANUAL_OP) == SW_MANUAL_OP) { // Wait for switch to change
+				SLEEP(2);
+			}
+			*(green_LED_ptr) = MYEL | SRED;
+			SLEEP(2);
+		} else { // Secondary green
+			*(green_LED_ptr) = MRED | SRED;
+			SLEEP(2);
+			*(green_LED_ptr) = MRED | SGRE;
+			while ( (*slider_switch_ptr & SW_MANUAL_OP) == 0) { // Wait for switch to change
+				SLEEP(2);
+			}
+			*(green_LED_ptr) = MRED | SYEL;
+			SLEEP(2);
+		}
 	}
 	return;
 }
@@ -182,26 +192,32 @@ void monitorThread(void *pdata) {
 		curISRState = ISRState;
 		switch (ISRState) {
 			case MANUAL_MODE:
+				*(red_LED_ptr) = LED_MANUAL;
 				ISRState = NORMAL_MODE; // Clear flag
 				manual();
 				break;
 			case EMERGENCY_MODE:
+				*(red_LED_ptr) = LED_EMERGENCY;
 				ISRState = NORMAL_MODE; // Clear flag
 				emergency();
 				break;
 			case BROKEN_MODE:
+				*(red_LED_ptr) = LED_BROKEN;
 				ISRState = NORMAL_MODE; // Clear flag
 				broken();
 				break;
 			case TURN_MODE:
+				*(red_LED_ptr) = LED_TURN;
 				ISRState = NORMAL_MODE; // Clear flag
 				turnLane();
 				break;
 			case PEDESTRIAN_MODE:
+				*(red_LED_ptr) = LED_PEDESTRIAN;
 				ISRState = NORMAL_MODE; // Clear flag
 				pedestrian();
 				break;
 			default:
+				*(red_LED_ptr) = LED_NORMAL;
 				ISRState = NORMAL_MODE; // Clear flag
 				normal();
 				break;

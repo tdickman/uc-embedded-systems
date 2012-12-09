@@ -25,6 +25,14 @@
 #define BTN_EMERGENCY	0x02
 #define BTN_BROKEN		0x01
 
+// Map red state LEDs
+#define LED_BROKEN		0x200
+#define LED_EMERGENCY	0x100
+#define LED_MANUAL		0x080
+#define LED_PEDESTRIAN	0x040
+#define LED_TURN		0x020
+#define LED_NORMAL		0x010
+
 // Map Switches
 #define SW_MANUAL_MODE	0x1
 #define SW_MANUAL_OP	0x2
